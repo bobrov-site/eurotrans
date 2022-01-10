@@ -42,4 +42,7 @@
 
 
 // Include your SCSS files
-@import "my";
+@import "font",
+        "componets/titles",
+        "componets/header",
+        "pages/hero";
