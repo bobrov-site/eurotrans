@@ -9,8 +9,29 @@
   .nav-header {
     .nav {
       &-item {
+        font-family: $uni;
+        font-weight: $regular;
+        font-size: 16px;
         .nav-link {
-
+          display: inline-block;
+          position: relative;
+          color: $white;
+        }
+        .nav-link:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: $blue-color;
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
+        .nav-link:hover:after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
         }
       }
     }

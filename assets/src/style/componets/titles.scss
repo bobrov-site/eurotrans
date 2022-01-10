@@ -1,5 +1,19 @@
-h1 {
+.hero {
+  .title-page {
+    margin-bottom: 56px;
+  }
+}
+.title-page {
   font-family: $uni;
   font-weight: $bold;
   font-size: 48px;
+  color: $white;
+}
+
+.title-section {
+  font-family: $uni;
+  font-weight: $bold;
+  font-size: 36px;
+  color: $white;
+  margin-bottom: 24px;
 }
