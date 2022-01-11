@@ -1,5 +1,25 @@
 //= ../../../node_modules/js-datepicker/dist/datepicker.min.js
 
+const today = document.getElementById('today-date-toggle');
+
+const tomorrow = document.getElementById('tomorrow-date-toggle');
+
+today.onclick = function () {
+    const todayDate = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const valueInput = todayDate.toLocaleDateString('ru-RU', options);
+    document.getElementById('datepickerinputStart').value = valueInput ;
+    console.log(valueInput)
+}
+
+tomorrow.onclick = function () {
+    const tomorrowDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const valueInput = tomorrowDate.toLocaleDateString('ru-RU', options);
+    document.getElementById('datepickerinputStart').value = valueInput ;
+    console.log(valueInput);
+}
+
 const pickerStart = datepicker('.dateStart',
     {
         id : 1,

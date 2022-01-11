@@ -58,6 +58,14 @@
               color: #c0c0c0;
             }
           }
+          .card-example {
+            .today-date-toggle {
+              cursor: pointer;
+            }
+            .tomorrow-date-toggle {
+              cursor: pointer;
+            }
+          }
         }
         .swiper-inputs {
           background-color: $blue-active;
