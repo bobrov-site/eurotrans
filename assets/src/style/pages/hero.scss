@@ -68,11 +68,13 @@
               background-color: $blue-active;
               color: $white;
               border: 1px solid $blue-active;
+              cursor: pointer;
             }
             .disabled {
               background-color: #F8FAFC;
               border: 1px solid #F8FAFC;
               color: #c0c0c0;
+              cursor: auto;
             }
           }
           .card-example {
