@@ -1,0 +1,5 @@
+.qs-datepicker {
+  .qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover {
+    background: $blue-active
+  }
+}
