@@ -15,6 +15,18 @@ swiper.onclick = function () {
      document.getElementById('dataListTo').value = tmp ;
 }
 
+//city button
+
+var cityFrom = document.getElementById('city-example-from');
+var cityTo = document.getElementById('city-example-to');
+
+cityFrom.onclick = function () {
+    document.getElementById('dataListFrom').value = cityFrom.textContent;
+}
+cityTo.onclick = function () {
+    document.getElementById('dataListTo').value = cityTo.textContent;
+}
+
 //count passengers
 
 var oldMen = document.getElementById('old-men');
