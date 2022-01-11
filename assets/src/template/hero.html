@@ -35,8 +35,8 @@
                                 <div class="col">
                                     <div class="card">
                                         <div class="card-body">
-                                            <label for="exampleDataList" class="form-label">Откуда</label>
-                                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Введите название населенного пункта">
+                                            <label for="dataListFrom" class="form-label">Откуда</label>
+                                            <input class="form-control shadow-none" list="datalistOptions" id="dataListFrom" placeholder="Введите название населенного пункта">
                                             <span class="card-example">
                                                 Например: <a href="#" class="card-example-city">Ставрополь</a>
                                             </span>
@@ -47,7 +47,7 @@
                                                 <option value="Los Angeles">
                                                 <option value="Chicago">
                                             </datalist>
-                                            <div class="swiper-inputs">
+                                            <div id="swiper-inputs" class="swiper-inputs">
                                                 <div class="swiper-inputs-icon"></div>
                                             </div>
                                         </div>
@@ -56,8 +56,8 @@
                                 <div class="col">
                                     <div class="card">
                                         <div class="card-body">
-                                            <label for="exampleDataList2" class="form-label">Куда</label>
-                                            <input class="form-control" list="datalistOptions" id="exampleDataList2" placeholder="Введите название населенного пункта">
+                                            <label for="datalistTo" class="form-label">Куда</label>
+                                            <input class="form-control shadow-none" list="datalistOptions" id="dataListTo" placeholder="Введите название населенного пункта">
                                             <span class="card-example">
                                                 Например: <a href="#" class="card-example-city">Москва</a>
                                             </span>
@@ -75,7 +75,7 @@
                                                 <div class="col">
                                                     <div class="count-passenger d-flex align-items-center justify-content-between flex-wrap old-men">
                                                         <div class="minus-button count-button disabled">-</div>
-                                                        <input type="number" class="form-control" value="0" placeholder="0">
+                                                        <input type="number" class="form-control shadow-none" value="0" placeholder="0">
                                                         <div class="plus-button count-button">+</div>
                                                         <span class="card-desc d-block">Детских</span>
                                                     </div>
@@ -83,7 +83,7 @@
                                                 <div class="col">
                                                     <div class="count-passenger d-flex align-items-center justify-content-between flex-wrap old-men">
                                                         <div class="minus-button count-button disabled">-</div>
-                                                        <input type="number" class="form-control" value="0" placeholder="0">
+                                                        <input type="number" class="form-control shadow-none" value="0" placeholder="0">
                                                         <div class="plus-button count-button">+</div>
                                                         <span class="card-desc d-block">Взрослых</span>
                                                     </div>
@@ -96,7 +96,7 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <label for="datepickerinputStart" class="form-label">Когда</label>
-                                            <input type="text" class="form-control dateStart" id="datepickerinputStart" placeholder="Выберите дату отправления">
+                                            <input type="text" class="form-control shadow-none dateStart" id="datepickerinputStart" placeholder="Выберите дату отправления">
                                             <img class="calendar-icon" alt="calendar" src="img/hero/calendar.svg">
                                             <span class="card-example">
                                                 <span id="today-date-toggle" class="card-example-date today-date-toggle text-decoration-underline">Сегодня</span>
@@ -108,8 +108,8 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col">
-                                    <button class="btn btn-dark">
+                                <div class="col d-flex justify-content-center align-items-center">
+                                    <button type="submit" class="btn btn-dark btn-disabled">
                                         Найти билеты
                                     </button>
                                 </div>

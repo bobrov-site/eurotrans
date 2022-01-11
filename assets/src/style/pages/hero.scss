@@ -1,6 +1,7 @@
 .hero {
   background: url("../../img/header/bg.jpg") no-repeat center center ;
   background-size: cover;
+  padding-bottom: 99px;
   &-content {
     .search-form {
       .checkbox-form {
@@ -26,6 +27,22 @@
       }
       .card {
         &-body {
+          .form-label {
+            font-family: $uni;
+            font-weight: $regular;
+            font-size: 18px;
+            color: $black;
+          }
+          .form-control {
+            padding-left: 0;
+            padding-right: 0;
+            font-family: $uniBook;
+            font-weight: $regular;
+            font-size: 18px;
+            color: #B5BDDB;
+            border: none;
+            outline: none !important;
+          }
           .count-passenger {
             /* Chrome, Safari, Edge, Opera */
             input::-webkit-outer-spin-button,
@@ -39,7 +56,7 @@
               -moz-appearance: textfield;
             }
             .form-control {
-              width: 50px;
+              width: 20px;
             }
             .count-button {
               display: flex;
@@ -79,12 +96,25 @@
           bottom: 30px;
           right: -46px;
           z-index: 9999;
+          cursor: pointer;
           &-icon {
             background: url("../../img/hero/arrows.svg") no-repeat;
             width: 33px;
             height: 24px;
           }
         }
+      }
+      .btn {
+        font-family: $uni;
+        font-weight: $regular;
+        font-size: 24px;
+        padding: 23px 65px;
+        border-radius: 15px;
+        border: none;
+        margin-top: 40px;
+      }
+      .btn-disabled {
+        background-color: #A3D7FF;
       }
     }
   }
