@@ -17,26 +17,91 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <form class="search-form">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                            <label class="form-check-label" for="inlineRadio1">В одну сторону</label>
+                <div class="col-12">
+                    <form class="search-form d-flex flex-wrap justify-content-center">
+                        <div class="checkbox-form d-block w-100 text-center">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">В одну сторону</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Туда-обратно</label>
+                            </div>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                            <label class="form-check-label" for="inlineRadio2">Туда-обратно</label>
-                        </div>
-                        <div class="one-way-inputs">
+                        <div class="one-way-inputs w-100">
                             <div class="row">
                                 <div class="col">
                                     <div class="card">
-
+                                        <div class="card-body">
+                                            <label for="exampleDataList" class="form-label">Откуда</label>
+                                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Введите название населенного пункта">
+                                            <span class="card-example">
+                                                Например: <a href="#" class="card-example-city">Ставрополь</a>
+                                            </span>
+                                            <datalist id="datalistOptions">
+                                                <option value="San Francisco">
+                                                <option value="New York">
+                                                <option value="Seattle">
+                                                <option value="Los Angeles">
+                                                <option value="Chicago">
+                                            </datalist>
+                                            <div class="swiper-inputs">
+                                                <div class="swiper-inputs-icon"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <label for="exampleDataList2" class="form-label">Куда</label>
+                                            <input class="form-control" list="datalistOptions" id="exampleDataList2" placeholder="Введите название населенного пункта">
+                                            <span class="card-example">
+                                                Например: <a href="#" class="card-example-city">Москва</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <label class="form-label">Пассажиры</label>
+                                                <img class="help-icon" alt="help" src="img/hero/help.svg" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top" >
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="count-passenger d-flex align-items-center justify-content-between flex-wrap old-men">
+                                                        <div class="minus-button count-button disabled">-</div>
+                                                        <input type="number" class="form-control" value="0" placeholder="0">
+                                                        <div class="plus-button count-button">+</div>
+                                                        <span class="card-desc d-block">Детских</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="count-passenger d-flex align-items-center justify-content-between flex-wrap old-men">
+                                                        <div class="minus-button count-button disabled">-</div>
+                                                        <input type="number" class="form-control" value="0" placeholder="0">
+                                                        <div class="plus-button count-button">+</div>
+                                                        <span class="card-desc d-block">Взрослых</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <label for="exampleFormControlInput5" class="form-label">Когда</label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="Введите название населенного пункта">
+                                            <span class="card-example">
+                                                Например: <a href="#" class="card-example-city">Москва</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col">
