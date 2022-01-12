@@ -1,4 +1,4 @@
-#enterLogin {
+#enterLogin , #enterRegistration {
   .modal-content {
     .modal-header {
       border-bottom: none;
@@ -12,6 +12,14 @@
       font-weight: $bold;
       font-size: 36px;
       color: $black;
+      .desc-modal {
+        margin-top: 40px;
+        font-family: $uni;
+        font-weight: $regular;
+        font-size: 18px;
+        text-align: center;
+        color: #B5BDDB;
+      }
       .modal-title {
         font-family: $uni;
         font-weight: $bold;
