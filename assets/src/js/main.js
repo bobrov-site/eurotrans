@@ -5,6 +5,5 @@
 
 // Import other js-files
 //= my.js
-//= button-disabled.js
-//= form-switcher
+//= form.js
 //= datepicker.js

@@ -20,7 +20,7 @@ tomorrow.onclick = function () {
     console.log(valueInput);
 }
 
-const pickerStart = datepicker('.dateStart',
+const pickerStartOneWay = datepicker('#datepickerinputStart',
     {
         id : 1,
         customDays : ['Вс', 'Пн' , 'Вт' , 'Ср' , 'Чт' , 'Пт' , 'Сб'],
@@ -35,9 +35,9 @@ const pickerStart = datepicker('.dateStart',
         }
     }
 );
-const pickerEnd = datepicker('.dateEnd',
+const pickerStartTwoWays = datepicker('#datepickerinputStart-twoWays',
     {
-        id : 1,
+        id : 2,
         customDays : ['Вс', 'Пн' , 'Вт' , 'Ср' , 'Чт' , 'Пт' , 'Сб'],
         customMonths : ['Январь' , 'Февраль' , 'Март' , 'Апрель' , 'Май' , 'Июнь' , 'Июль', 'Август' , 'Сентябрь' , 'Октябрь' , 'Ноябрь', 'Декабрь'],
         customOverlayMonths: ['Январь' , 'Февраль' , 'Март' , 'Апрель' , 'Май' , 'Июнь' , 'Июль', 'Август' , 'Сентябрь' , 'Октябрь' , 'Ноябрь', 'Декабрь'],
@@ -51,5 +51,22 @@ const pickerEnd = datepicker('.dateEnd',
     }
 );
 
-pickerStart.getRange();
-pickerEnd.getRange();
+const pickerEndTwoWays = datepicker('#datepickerinputFinish-twoWays',
+    {
+        id : 2,
+        customDays : ['Вс', 'Пн' , 'Вт' , 'Ср' , 'Чт' , 'Пт' , 'Сб'],
+        customMonths : ['Январь' , 'Февраль' , 'Март' , 'Апрель' , 'Май' , 'Июнь' , 'Июль', 'Август' , 'Сентябрь' , 'Октябрь' , 'Ноябрь', 'Декабрь'],
+        customOverlayMonths: ['Январь' , 'Февраль' , 'Март' , 'Апрель' , 'Май' , 'Июнь' , 'Июль', 'Август' , 'Сентябрь' , 'Октябрь' , 'Ноябрь', 'Декабрь'],
+        overlayButton : 'Выбрать',
+        overlayPlaceholder : 'Введите год',
+        formatter : (input, date, instance) => {
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const value = date.toLocaleDateString('ru-RU', options);
+            input.value = value
+        }
+    }
+);
+
+
+pickerStartTwoWays.getRange();
+pickerEndTwoWays.getRange();
