@@ -8,6 +8,9 @@ const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 //swiper button
 
 const swiper = document.getElementById('swiper-inputs');
+const swiperTwoWays = document.getElementById('swiper-inputs-twoWays');
+
+//oneway
 
 swiper.onclick = function () {
     const tmp = document.getElementById('dataListFrom').value;
@@ -15,16 +18,34 @@ swiper.onclick = function () {
      document.getElementById('dataListTo').value = tmp ;
 }
 
+//twoways
+
+swiperTwoWays.onclick = function () {
+    const tmpTwoWays = document.getElementById('dataListFrom-twoWays').value;
+    document.getElementById('dataListFrom-twoWays').value = document.getElementById('dataListTo-twoWays').value;
+    document.getElementById('dataListTo-twoWays').value = tmpTwoWays ;
+}
+
 //city button
 
 const cityFrom = document.getElementById('city-example-from');
 const cityTo = document.getElementById('city-example-to');
+
+const cityFromTwoWays = document.getElementById('city-example-from-twoWays');
+const cityToTwoWays = document.getElementById('city-example-to-twoWays');
 
 cityFrom.onclick = function () {
     document.getElementById('dataListFrom').value = cityFrom.textContent;
 }
 cityTo.onclick = function () {
     document.getElementById('dataListTo').value = cityTo.textContent;
+}
+
+cityFromTwoWays.onclick = function () {
+    document.getElementById('dataListFrom-twoWays').value = cityFromTwoWays.textContent;
+}
+cityToTwoWays.onclick = function () {
+    document.getElementById('dataListTo-twoWays').value = cityToTwoWays.textContent;
 }
 
 //count passengers
