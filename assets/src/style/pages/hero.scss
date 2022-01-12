@@ -121,3 +121,68 @@
     }
   }
 }
+
+.popular-directions {
+  padding-top: 72px;
+
+  .card-directions:first-child {
+    margin-right: 16px;
+  }
+
+  .card-city-direction {
+    .card-body {
+      &-city {
+        &-title {
+          font-family: $uni;
+          font-weight: $regular;
+          font-size: 18px;
+          color: $black;
+          margin-bottom: 12px;
+        }
+        &-value {
+          display: block;
+          font-family: $uni;
+          font-weight: $bold;
+          font-size: 24px;
+          color: $black;
+        }
+      }
+      &-price {
+        &-title {
+          font-family: $uni;
+          font-weight: $regular;
+          font-size: 18px;
+          color: $black;
+          margin-bottom: 12px;
+        }
+        &-value {
+          display: block;
+          font-family: $uni;
+          font-weight: $bold;
+          font-size: 24px;
+          color: $black;
+        }
+      }
+    }
+  }
+
+  .card-directions {
+    width: 100%;
+    .card-title {
+      font-family: $uni;
+      font-weight: $regular;
+      font-size: 18px;
+      color: $black;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .card-value {
+      display: block;
+      font-family: $uni;
+      font-weight: $bold;
+      font-size: 24px;
+      color: $black;
+      text-align: center;
+    }
+  }
+}

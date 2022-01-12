@@ -1,24 +1,24 @@
 //activated tooltips everywhere
 
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
 //swiper button
 
-var swiper = document.getElementById('swiper-inputs');
+const swiper = document.getElementById('swiper-inputs');
 
 swiper.onclick = function () {
-    var tmp = document.getElementById('dataListFrom').value;
+    const tmp = document.getElementById('dataListFrom').value;
      document.getElementById('dataListFrom').value = document.getElementById('dataListTo').value;
      document.getElementById('dataListTo').value = tmp ;
 }
 
 //city button
 
-var cityFrom = document.getElementById('city-example-from');
-var cityTo = document.getElementById('city-example-to');
+const cityFrom = document.getElementById('city-example-from');
+const cityTo = document.getElementById('city-example-to');
 
 cityFrom.onclick = function () {
     document.getElementById('dataListFrom').value = cityFrom.textContent;
@@ -29,12 +29,12 @@ cityTo.onclick = function () {
 
 //count passengers
 
-var oldMen = document.getElementById('old-men');
-var adultMen = document.getElementById('adult-men');
-var plusOldMen = document.getElementById('plus-button-old');
-var minusOldMen = document.getElementById('minus-button-old');
-var plusAdultMen = document.getElementById('plus-button-adult');
-var minusAdultMen = document.getElementById('minus-button-adult');
+const oldMen = document.getElementById('old-men');
+const adultMen = document.getElementById('adult-men');
+const plusOldMen = document.getElementById('plus-button-old');
+const minusOldMen = document.getElementById('minus-button-old');
+const plusAdultMen = document.getElementById('plus-button-adult');
+const minusAdultMen = document.getElementById('minus-button-adult');
 
 //включение кнопки если больше 1
 
