@@ -5,4 +5,5 @@
 
 // Import other js-files
 //= my.js
+//= form.js
 //= datepicker.js
