@@ -1,5 +1,11 @@
-#enterLogin , #enterRegistration {
+#enterLogin , #enterRegistration, #enterPassword {
   .modal-content {
+    .button-back {
+      background: url("../img/modal/back.svg") no-repeat;
+      width: 33px;
+      height: 12px;
+      cursor: pointer;
+    }
     .modal-header {
       border-bottom: none;
       .login-img {
