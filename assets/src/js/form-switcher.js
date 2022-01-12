@@ -5,20 +5,20 @@ const twoWaysSection = document.getElementsByClassName('two-ways-inputs');
 
 form.onclick = function () {
     if (ratioOneWay.checked) {
-        oneWaySection[0].classList.remove('d-none');
-        twoWaysSection[0].classList.add('d-none');
-    }
-    else {
         oneWaySection[0].classList.add('d-none');
         twoWaysSection[0].classList.remove('d-none');
+    }
+    else {
+        oneWaySection[0].classList.remove('d-none');
+        twoWaysSection[0].classList.add('d-none');
     }
 
     if (ratioTwoWays.checked) {
-        twoWaysSection[0].classList.add('d-none');
-        oneWaySection[0].classList.remove('d-none');
-    }
-    else {
         oneWaySection[0].classList.add('d-none');
         twoWaysSection[0].classList.remove('d-none');
+    }
+    else {
+        twoWaysSection[0].classList.add('d-none');
+        oneWaySection[0].classList.remove('d-none');
     }
 }
