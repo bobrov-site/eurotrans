@@ -7,15 +7,14 @@ const passenger = document.getElementById('old-men');
 const date = document.getElementById('datepickerinputStart');
 const submitButton = document.getElementById('submit-button');
 const form = document.getElementById('hero-form');
-const inputs = document.querySelectorAll('.one-way-inputs-input');
 //twoways
 const fromTwoWays = document.getElementById('dataListFrom-twoWays');
 const toTwoWays = document.getElementById('dataListTo-twoWays');
 const passengerTwoWays = document.getElementById('old-men-twoWays');
 const dateTwoWays = document.getElementById('datepickerinputStart-twoWays');
+const dateFinishTwoWays = document.getElementById('datepickerinputFinish-twoWays');
 const submitButtonTwoWays = document.getElementById('submit-button-twoWays');
 const formTwoWays = document.getElementById('hero-form-twoWays');
-const inputsTwoWays = document.querySelectorAll('.one-way-inputs-input');
 
 const ratioOneWay = document.getElementById('inlineRadio1');
 const ratioTwoWays = document.getElementById('inlineRadio2');
@@ -41,13 +40,13 @@ form.onclick = function (event) {
         submitButton.setAttribute('type', 'button');
     }
 
-    if (fromTwoWays.value !== '' && toTwoWays.value !== '' && passengerTwoWays.value !== '' && dateTwoWays.value !== '' ) {
-        submitButton.classList.remove('btn-disabled');
-        submitButton.setAttribute('type', 'submit');
+    if (fromTwoWays.value !== '' && toTwoWays.value !== '' && passengerTwoWays.value !== '' && dateTwoWays.value !== '' && dateFinishTwoWays.value !== '' ) {
+        submitButtonTwoWays.classList.remove('btn-disabled');
+        submitButtonTwoWays.setAttribute('type', 'submit');
     }
     else {
-        submitButton.classList.add('btn-disabled');
-        submitButton.setAttribute('type', 'button');
+        submitButtonTwoWays.classList.add('btn-disabled');
+        submitButtonTwoWays.setAttribute('type', 'button');
     }
 
     //checkboxes
