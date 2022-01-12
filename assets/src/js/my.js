@@ -57,7 +57,16 @@ const minusOldMen = document.getElementById('minus-button-old');
 const plusAdultMen = document.getElementById('plus-button-adult');
 const minusAdultMen = document.getElementById('minus-button-adult');
 
+const oldMenTwoWays = document.getElementById('old-men-twoWays');
+const adultMenTwoWays = document.getElementById('adult-men-twoWays');
+const plusOldMenTwoWays = document.getElementById('plus-button-old-twoWays');
+const minusOldMenTwoWays = document.getElementById('minus-button-old-twoWays');
+const plusAdultMenTwoWays = document.getElementById('plus-button-adult-twoWays');
+const minusAdultMenTwoWays = document.getElementById('minus-button-adult-twoWays');
+
 //включение кнопки если больше 1
+
+//oneway
 
 plusOldMen.onclick = function () {
     oldMen.value ++ ;
@@ -65,7 +74,19 @@ plusOldMen.onclick = function () {
         minusOldMen.classList.remove('disabled');
     }
 }
+
+//twoways
+
+plusOldMenTwoWays.onclick = function () {
+    oldMenTwoWays.value ++ ;
+    if (oldMenTwoWays.value > 1) {
+        minusOldMenTwoWays.classList.remove('disabled');
+    }
+}
+
 //включение кнопки если больше 0
+
+//oneway
 plusAdultMen.onclick = function () {
     adultMen.value ++ ;
     if (adultMen.value > 0) {
@@ -73,7 +94,18 @@ plusAdultMen.onclick = function () {
     }
 }
 
+//twoways
+
+plusAdultMenTwoWays.onclick = function () {
+    adultMenTwoWays.value ++ ;
+    if (adultMenTwoWays.value > 0) {
+        minusAdultMenTwoWays.classList.remove('disabled');
+    }
+}
+
 //выключение кнопки если меньше 1
+
+//oneway
 minusOldMen.onclick = function () {
     oldMen.value -- ;
     if (oldMen.value < 1) {
@@ -84,7 +116,21 @@ minusOldMen.onclick = function () {
     }
 }
 
+//twoways
+
+minusOldMenTwoWays.onclick = function () {
+    oldMenTwoWays.value -- ;
+    if (oldMenTwoWays.value < 1) {
+        oldMenTwoWays.value = 1;
+    }
+    if (oldMen.value == 1) {
+        minusOldMenTwoWays.classList.add('disabled');
+    }
+}
+
 //выключение кнопки если меньше 0
+
+//oneway
 
 minusAdultMen.onclick = function () {
     adultMen.value -- ;
@@ -96,7 +142,20 @@ minusAdultMen.onclick = function () {
     }
 }
 
+//twoways
+
+minusAdultMenTwoWays.onclick = function () {
+    adultMenTwoWays.value -- ;
+    if (adultMenTwoWays.value < 0) {
+        adultMenTwoWays.value = 0;
+    }
+    if (adultMenTwoWays.value == 0) {
+        minusAdultMenTwoWays.classList.add('disabled');
+    }
+}
+
 //валидация если больше 25
+//one way
 oldMen.onblur = function () {
     if (oldMen.value > 25) {
         oldMen.value = 1 ;
@@ -105,12 +164,31 @@ oldMen.onblur = function () {
         oldMen.value = 1 ;
     }
 }
+//twoways
+oldMenTwoWays.onblur = function () {
+    if (oldMenTwoWays.value > 25) {
+        oldMenTwoWays.value = 1 ;
+    }
+    if (oldMenTwoWays.value < 1) {
+        oldMenTwoWays.value = 1 ;
+    }
+}
+//oneways
 adultMen.onblur = function () {
     if (adultMen.value > 25) {
         adultMen.value = 1 ;
     }
     if (adultMen.value < 1) {
         adultMen.value = 1 ;
+    }
+}
+
+adultMenTwoWays.onblur = function () {
+    if (adultMenTwoWays.value > 25) {
+        adultMenTwoWays.value = 1 ;
+    }
+    if (adultMenTwoWays.value < 1) {
+        adultMenTwoWays.value = 1 ;
     }
 }
 
