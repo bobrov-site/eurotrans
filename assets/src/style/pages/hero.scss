@@ -99,6 +99,10 @@
           right: -46px;
           z-index: 9999;
           cursor: pointer;
+          @media screen and (max-width: 767px) {
+            right: 0;
+            bottom: -40px;
+          }
           &-icon {
             background: url("../../img/hero/arrows.svg") no-repeat;
             width: 33px;
@@ -215,6 +219,9 @@
     background-color: $blue-active;
     color: $white;
     text-decoration: none;
+    @media screen and (max-width: 440px) {
+      padding: 23px 32px;
+    }
   }
   &-button:hover {
     background-color: $blue-color;
