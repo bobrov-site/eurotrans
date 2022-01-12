@@ -20,7 +20,6 @@ form.onclick = function (event) {
     }
 
     else {
-        event.preventDefault();
         console.log('else');
         submitButton.classList.add('btn-disabled');
         submitButton.setAttribute('type', 'button');
