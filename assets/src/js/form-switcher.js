@@ -9,6 +9,7 @@ form.onclick = function () {
         twoWaysSection[0].classList.remove('d-none');
     }
     else {
+        ratioOneWay.removeAttribute('checked');
         oneWaySection[0].classList.remove('d-none');
         twoWaysSection[0].classList.add('d-none');
     }
